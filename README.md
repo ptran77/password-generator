@@ -60,7 +60,7 @@ Additionally, the application ensures that at least one character from each allo
 
 ## Screenshot
 
-<img src ="./assets/images/webpage-shot.png" width="400">
+<img src ="./assets/images/animation-screenshot.gif" width="400">
 
 ---
 
