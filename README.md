@@ -9,9 +9,9 @@ Build an application that can generate random passwords based on the criterias t
 - [How the Password Generator Works?](#function)
   - [Prompts](#prompt)
     - [Password Length](#pass-length)
-    - [Types of Characters](#charater-type)
+    - [Types of Characters](#character-type)
   - [Creating the Password](#create-pass)
-- [Screenshot](#screenshoot)
+- [Screenshot](#screenshot)
 - [Page Link](#page-link)
 
 ---
