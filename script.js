@@ -21,11 +21,14 @@ var getPassLength = function () {
 var generatePassword = function () {
   var passwordLength = getPassLength();
 
+  // prompts for asking for specific types of character to be allowed for the password
   while (true) {
     var haveLowerCase = window.confirm("Include lowercase characters?");
     var haveUpperCase = window.confirm("Include uppercase characrers?");
     var haveNumber = window.confirm("Inclide numeric characters?");
     var haveSpecialChar = window.confirm("Include special characters?");
+
+    // makes sure that there is at least one type of character allowed 
     if (haveLowerCase === false && haveUpperCase === false && haveNumber === false && haveSpecialChar === false) {
       window.alert("There are no characters to use. Try Again.");
     }
@@ -76,7 +79,9 @@ var generatePassword = function () {
     availChar.push.apply(availChar,special);
   }
 
+  // generating the password one letter at a time
   for(var i = 0; i < passwordLength; i++) {
+    // checking if the index is reserve for a specific type of character
     if(i == lcIndex) {
       password += lowercase[Math.floor(Math.random()*lowercase.length)];
     }
